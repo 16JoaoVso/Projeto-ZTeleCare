@@ -1,0 +1,72 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Cor do root */
+:root{
+    --AzulV: #0d4354;
+    --Cinza: #707070;
+    --Branco: #fff;
+
+ 
+}
+
+/* css */
+
+*{
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    box-sizing: border-box;
+    transition: all linear .2s;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* header navbar section começo */
+
+header {
+    width: 96%;
+    background-color: var(--Branco);
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+/* header navbar section fim */
+
+/* Logo name */
+header a{
+    color: var(--Preto)
+}
+header a:hover{
+    color: var(--AzulV);
+}
+
+header .logo{
+    font-size: 3rem;
+}
+
+header .logo span{
+    color: var(--AzulV);
+}
+
+/* navbar link */
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
