@@ -276,7 +276,7 @@ header .fa-bars {
 }
 
 .card .container h1{
-    font-size: 2rem;
+    font-size: 4rem;
     text-align: justify;
     color: var(--AzulV);
 }
@@ -314,17 +314,6 @@ header .fa-bars {
 
 
 /* Fim do card */
-
-
-
-
-/* teste */
-body {
-    height: 10000px;
-}
-
-
-
 
 
 
