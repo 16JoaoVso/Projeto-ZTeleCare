@@ -128,12 +128,16 @@ header .navbar ul li a:hover {
 
 header .fa-times {
     transform: rotaet(180deg);
+    
+}
+header .fa-bars {
+    display: none;
 }
 
 .header-active {
     top: 0;
     width: 100%;
-    box-shadow: .1rem .3rem rgba(0, 0, 0.3);
+    box-shadow: .1rem .3rem rgba(0, 0, 0, .3);
 }
 
 /* Fim da Header com navbar*/
@@ -148,14 +152,21 @@ header .fa-times {
 .home .row {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 85%;
     margin: 0 auto;
 }
 
+.home .row .content {
+    margin-left: 20px;
+    text-align: center;
+    flex-basis: 60%;
+}
+
 /* Imagens da home */
 .home .row .images img {
-    height: 75vh;
+    height: 70vh;
+    flex-basis: 40%;
 }
 
 /* Topo da home */
@@ -189,7 +200,7 @@ header .fa-times {
     width: 75%;
     margin: 4rem auto;
     border-radius: .5rem;
-    box-shadow: 0 .3rem .5rem rgba(0, 0, 0.3);
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -230,6 +241,83 @@ header .fa-times {
 }
 /* Fim do sobre */
 
+
+
+/* Começo do card */
+
+.card .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card .box-container .box {
+    width: 30rem;
+    margin: 2rem 1rem;
+    overflow: hidden;
+    border-radius: .5rem ;
+    box-shadow: 0.3rem .5rem rgba(0, 0, 0, .3);
+}
+/* Imagens do card */
+.card .box-container .box img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .box-container .box .content {
+    padding: 1rem 1.3rem;
+}
+
+.card .box-container .box .content h2{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--Cinza);
+}
+
+.card .container h1{
+    font-size: 2rem;
+    text-align: justify;
+    color: var(--AzulV);
+}
+
+.card .container h3{
+    font-size: 2rem;
+    text-align: left;
+}
+
+
+
+.card .box-container .box .content h2:hover{
+    text-decoration: underline;
+    color: var(--AzulV);
+}
+
+
+.card .box-container .box .content p{
+    font-size: 1.7rem;
+    text-align: center;
+     color: var(--Cinza);
+}
+
+
+.card .box-container .box .content .icons {
+    text-align: center;
+}
+
+.card .box-container .box .content .icons a{
+    font-size: 2rem;
+    color: var(--AzulV);
+    text-align: center;
+    margin: 1rem;
+}
+
+
+/* Fim do card */
+
+
+
+
 /* teste */
 body {
     height: 10000px;
@@ -249,6 +337,7 @@ body {
 
     header .fa-bars {
         display: block;
+        font-size: 24px;
     }
 
     header .navbar {
