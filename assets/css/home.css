@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Cor do root */
-:root{
+:root {
     --AzulV: #0d4354;
     --Cinza: #707070;
     --Branco: #fff;
 
- 
+
 }
 
 /* css */
 
-*{
+* {
     font-family: "Raleway", sans-serif;
     margin: 0;
     padding: 0;
@@ -24,12 +24,54 @@
 }
 
 
-html{
+html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
 
-/* header navbar section começo */
+/* Botão */
+
+.button {
+    height: 3.5rem;
+    width: 15rem;
+    background: var(--AzulV);
+    color: var(--Branco);
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    border: .1rem solid var(--AzulV);
+}
+
+.button:hover {
+    border: .1rem solid var(--AzulV);
+    background: var(--Branco);
+    color: var(--AzulV);
+    letter-spacing: .2rem;
+}
+
+/* heading */
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    padding-top: 8rem;
+    color: var(--AzulV);
+    letter-spacing: .1rem;
+}
+
+/* title */
+.title {
+    text-align: center;
+    padding: 0rem 1rem;
+    font-size: 2.5rem;
+    color: var(--Cinza);
+    font-weight: 300;
+}
+
+
+/* Começo da Header com navbar */
 
 header {
     width: 96%;
@@ -39,34 +81,233 @@ header {
     left: 50%;
     transform: translate(-50%);
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
     z-index: 1000;
 }
-/* header navbar section fim */
 
 /* Logo name */
-header a{
-    color: var(--Preto)
+header a {
+    color: var(--Cinza)
 }
-header a:hover{
+
+header a:hover {
     color: var(--AzulV);
 }
 
-header .logo{
+header .logo {
     font-size: 3rem;
 }
 
-header .logo span{
+header .logo span {
     color: var(--AzulV);
 }
 
 /* navbar link */
 
-header .navbar ul{
+header .navbar ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
+}
+
+header .navbar ul li {
+    margin: 0 1rem;
+}
+
+header .navbar ul li a {
+    font-size: 2rem;
+    color: var(--Cinza);
+}
+
+header .navbar ul li a:hover {
+    color: var(--AzulV);
+}
+
+header .fa-times {
+    transform: rotaet(180deg);
+}
+
+.header-active {
+    top: 0;
+    width: 100%;
+    box-shadow: .1rem .3rem rgba(0, 0, 0.3);
+}
+
+/* Fim da Header com navbar*/
+
+/* Começo da home */
+
+.home {
+    min-height: 100vh;
+    padding-top: 10rem;
+}
+
+.home .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Imagens da home */
+.home .row .images img {
+    height: 75vh;
+}
+
+/* Topo da home */
+.home .content h1 {
+    font-size: 4rem;
+    color: var(--Cinza);
+}
+
+.home .content h1 span {
+    color: var(--AzulV);
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    color: var(--Cinza);
+}
+
+
+/* Fim da home */
+
+/* Começo do sobre*/
+.about {
+    background-color: #f9f9f9;
+}
+
+.about .box-container {
+    padding: 4rem 0;
+}
+
+.about .box-container .box {
+    width: 75%;
+    margin: 4rem auto;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: var(--Branco);
+}
+
+/* Imagens do sobre */
+
+.about .box-container .box .images img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Texto do sobre */
+
+.about .box-container .box .content {
+    height: 100%;
+    width: 50%;
+    padding: 2rem;
+}
+
+.about .box-container .box .content h3 {
+    font-size: 3rem;
+    color: var(--AzulV);
+    display: flex;
+    align-items: start;
+}
+
+.about .box-container .box .content p{
+    font-size: 1.5rem;
+    color: var(--Cinza);
+    padding: 1rem 0;
+    text-align: start;
+}
+
+.about .box-container .box:nth-child(even){
+    flex-flow: row-reverse;
+}
+/* Fim do sobre */
+
+/* teste */
+body {
+    height: 10000px;
+}
+
+
+
+
+
+
+/* Celular */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        top: -100rem;
+        left: 0;
+        width: 100%;
+        background: var(--Branco);
+        opacity: 0;
+    }
+
+    header .navbar ul {
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+
+    header .navbar ul li {
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .navbar ul li a {
+        font-size: 3rem;
+        display: block;
+    }
+
+    header .nav-toggle {
+        top: 5.5rem;
+        opacity: 1;
+    }
+
+    /* Home celular */
+
+    .home .row {
+        flex-flow: column;
+    }
+
+    .home .row .content {
+        text-align: center;
+    }
+
+    /* Home images */
+    .home .row .images img {
+        width: 100%;
+    }
+
+    /* Sobre celular */
+    .about .box-container .box{
+        flex-flow: column;
+        width: 90%;
+    }
+    .about .box-container .box:nth-child(even){
+        flex-flow: column;
+    }
+    .about .box-container .box .images{
+        width: 100%;
+    }
+    .about .box-container .box .content{
+     width: 100%;   
+    }
 }
