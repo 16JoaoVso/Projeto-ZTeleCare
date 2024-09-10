@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 190vh;
+    height: 150vh;
     background-color: #ecf0f1;
 }
 .content {
@@ -328,14 +328,6 @@ input:-webkit-autofill
 
 /*Mobile*/
 @media screen and (max-width: 1040px) {
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 111vh;
-        background-color: #ecf0f1;
-    }
-
     .content {
         width: 100%;
         height: 100%;
@@ -343,7 +335,7 @@ input:-webkit-autofill
 
     .content::before {
         width: 100%;
-        height: 40%;
+        height: 28%;
         top: 0;
         border-radius: 0;
     }
@@ -357,7 +349,7 @@ input:-webkit-autofill
     }
     
     .sign-in-js .content::before {
-        top: 60%;
+        top: 73%;
         left: 0;
         border-radius: 0;
 
