@@ -100,8 +100,9 @@ header .logo {
     font-size: 3rem;
 }
 
-header .logo span {
-    color: var(--AzulV);
+header .logo  img{
+    width: 80px;
+    margin: 2px 0px 0px 25px;
 }
 
 /* navbar link */
@@ -259,6 +260,7 @@ header .fa-bars {
     box-shadow: 0.3rem .5rem rgba(0, 0, 0, .3);
 }
 /* Imagens do card */
+
 .card .box-container .box img{
     height: 30rem;
     width: 100%;
@@ -327,6 +329,11 @@ header .fa-bars {
     header .fa-bars {
         display: block;
         font-size: 24px;
+    }
+
+    header .logo  img{
+        width: 55px;
+        margin: -15px 0px 0px 25px;
     }
 
     header .navbar {
