@@ -6,14 +6,9 @@
     box-sizing: border-box;
 }
 
-#error {
-    color: red;
-    font-size: 12px;
-    margin-top: 5px;
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow: auto;
 }
 
 .container {
