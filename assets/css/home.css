@@ -67,6 +67,12 @@
   }
 
 
+  #linha {
+    margin: 25px 0 25px 0;
+    width: 100%;
+    border-bottom: 1px solid var(--azulC);
+  }
+
 
   /* Começo da header  */
 
