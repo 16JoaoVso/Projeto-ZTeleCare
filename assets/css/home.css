@@ -240,6 +240,8 @@
     font-size: 1.5rem;
     color: var(--azulC);
     padding: 1rem 0;
+    line-height: 1.3em;
+    font-size: 1.8rem;
     text-align: start;
   }
 

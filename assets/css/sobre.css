@@ -16,7 +16,11 @@
   font-family: "Cantarell", sans-serif;
   margin: 0;
   padding: 0;
-  border: 0;
+  text-decoration: none;
+  text-transform: capitalize;
+  outline: none;
+  box-sizing: border-box;
+  transition: all linear .2s;
 
 }
 
@@ -115,6 +119,9 @@ header .fa-times {
   justify-content: center;
   flex-wrap: wrap;
   padding: 2rem 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
 }
 
 .footer .box {
@@ -243,6 +250,7 @@ header .fa-times {
 }
 
 #projeto p {
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 400;
   font-style: normal;
@@ -273,6 +281,7 @@ header .fa-times {
 }
 
 #atendimento p {
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 400;
   font-style: normal;
@@ -302,6 +311,7 @@ header .fa-times {
 }
 
 #saude p {
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 400;
   font-style: normal;
@@ -424,7 +434,8 @@ header .fa-times {
   }
 
   #projeto p {
-    font-size: 1.7rem;
+    text-align: left;
+    font-size: 2rem;
   }
 
   #atendimento {
@@ -442,7 +453,8 @@ header .fa-times {
   }
 
   #atendimento p {
-    font-size: 1.7rem;
+    text-align: left;
+    font-size: 2rem;
   }
 
   #saude {
@@ -460,7 +472,8 @@ header .fa-times {
   }
 
   #saude p {
-    font-size: 1.7rem;
+    text-align: left;
+    font-size: 2rem;
   }
 
 }
