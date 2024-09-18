@@ -170,6 +170,20 @@ input:-webkit-autofill {
     margin: 8px;
 }
 
+.country-code {
+    height: 40px;
+    border: none;
+    background-color: #ecf0f1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+.country-code-span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
 .icon-modify {
     color: #7f8c8d;
     padding: 0 5px;

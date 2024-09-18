@@ -1,0 +1,367 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* root */
+:root {
+  --azul: #0d4354;
+  --azulC: #0188df;
+  --branco: #fff;
+  --preto: #000000;
+}
+
+
+* {
+  font-family: "Cantarell", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-transform: capitalize;
+  outline: none;
+  box-sizing: border-box;
+  transition: all linear .2s;
+
+}
+
+html,
+body {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.button {
+    height: 3.5rem;
+    width: 15rem;
+    background: var(--azul);
+    color: var(--branco);
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    border: .1rem solid var(--azul);
+  }
+
+  .button:hover {
+    border: .1rem solid var(--azul);
+    background: var(--branco);
+    color: var(--azul);
+    letter-spacing: .2rem;
+  }
+
+.title {
+    text-align: center;
+    padding: 0rem 1rem;
+    font-size: 2.5rem;
+    color: var(--azulC);
+    font-weight: 300;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    padding-top: 8rem;
+    color: var(--azul);
+    letter-spacing: .1rem;
+  }
+
+  #linha {
+    margin: 25px 0 25px 0;
+    width: 100%;
+    border-bottom: 1px solid var(--azulC);
+  }
+
+  header {
+    width: 96%;
+    background: var(--branco);
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1000;
+  }
+  
+  /* Logo  */
+  
+  
+  header .logo img {
+    width: 80px;
+    margin: 2px 0px 0px 25px;
+  }
+  
+  header .logo span {
+    color: var(--azulC);
+  }
+  
+  /* navbar */
+  header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  header .navbar ul li {
+    margin: 0 1rem;
+  }
+  
+  header .navbar ul li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--azul);
+  }
+  
+  header .navbar ul li a:hover {
+    color: var(--azulC);
+  }
+  
+  header .fa-bars {
+    font-size: 3rem;
+    color: var(--azul);
+    cursor: pointer;
+    display: none;
+  }
+  
+  header .fa-times {
+    transform: rotate(180deg);
+  }
+  
+  
+  .header-active {
+    top: 0;
+    width: 100%;
+    box-shadow: .1rem .3rem rgba(0, 0, 0, .3);
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 50px 15px;
+  }
+
+  .artigos {
+    background-color: #f9f9f9;
+  }
+
+  .artigos .container {
+    padding: 4rem 0;
+  }
+
+  .artigos .container .box {
+    width: 75%;
+    margin: 4rem auto;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: var(--branco);
+  }
+
+  /* Imagens do sobre  */
+  .artigos .container .box .images {
+    height: 40rem;
+    width: 50%;
+  }
+
+  .artigos .container .box .images img {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Texto do sobre */
+  .artigos .container .box .content {
+    height: 100%;
+    width: 50%;
+    padding: 2rem;
+  }
+
+  .artigos .container .box .content h3 {
+    font-size: 3rem;
+    color: var(--azul);
+    display: flex;
+    align-items: start;
+  }
+
+  .artigos .container .box .content p {
+    font-size: 1.5rem;
+    color: var(--azulC);
+    padding: 1rem 0;
+    line-height: 1.3em;
+    font-size: 1.8rem;
+    text-align: start;
+  }
+
+  .artigos .container .box:nth-child(even) {
+    flex-flow: row-reverse;
+  }
+
+
+  .footer {
+    background: var(--azulC);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  
+  .footer .box {
+    width: 30rem;
+    margin: 2rem;
+    text-align: center;
+  }
+  
+  .footer .box:nth-child(1) {
+    text-align: left;
+  }
+  
+  /* logo no footer  */
+  
+  .footer .box .logo {
+    padding: 2rem 0;
+    font-size: 3rem;
+    color: var(--branco);
+  }
+  
+  .footer .box .logo:hover {
+    color: var(--azul);
+  }
+  
+  .footer .box .logo span {
+    color: var(--azul);
+  }
+  
+  .footer .box p {
+    font-size: 1.5rem;
+    color: var(--branco);
+  }
+  
+  .footer .box a {
+    color: var(--branco);
+    font-size: 2rem;
+    display: block;
+    padding: .2rem 0;
+  }
+  
+  .footer .box a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .footer .copyright {
+    width: 85%;
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: var(--branco);
+    text-align: center;
+    border-top: .2rem solid var(--branco);
+  }
+  
+  .footer .credit span {
+    color: var(--azul);
+    text-decoration: underline;
+    letter-spacing: .5rem;
+  }
+
+  #artigos {
+    padding: 50px 0px;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--branco);
+  }
+  
+
+
+
+
+
+  @media (max-width:768px) {
+
+    html {
+      font-size: 55%;
+    }
+  
+    header {
+      width: 96%;
+      background: var(--branco);
+      position: fixed;
+      top: 2rem;
+      left: 50%;
+      transform: translate(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+  
+    header .fa-bars {
+      display: block;
+    }
+  
+    header .logo img {
+      width: 55px;
+      margin: -15px 0px 0px 25px;
+    }
+  
+    header .navbar {
+      position: fixed;
+      top: -100rem;
+      left: 0;
+      width: 100%;
+      background: var(--branco);
+      opacity: 0;
+    }
+  
+    header .navbar ul {
+      flex-flow: column;
+      padding: 2rem 0;
+    }
+  
+    header .navbar ul li {
+      margin: 1rem 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    header .navbar ul li a {
+      font-size: 3rem;
+      display: block;
+    }
+  
+    header .nav-toggle {
+      top: 5.5rem;
+      opacity: 1;
+    }
+
+    .artigos .container .box {
+        flex-flow: column;
+        width: 90%;
+      }
+  
+      .artigos .container .box:nth-child(even) {
+        flex-flow: column;
+      }
+  
+      .artigos .container .box .images {
+        width: 100%;
+      }
+  
+      .artigos .container .box .content {
+        width: 100%;
+      }
+  
+    #artigos {
+      padding: 50px 0px;
+      background-size: cover;
+      background-position: center;
+      background-color: var(--backgroundCard);
+    }
+}

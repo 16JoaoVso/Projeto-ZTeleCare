@@ -18,7 +18,7 @@
        <header>
 
         <!-- Logo  -->
-        <a href="#" class="logo"><img src="../images/Logo.png" alt=""></a>
+        <a href="./home.html" class="logo"><img src="../images/Logo.png" alt=""></a>
 
         <!-- Link da navbar  -->
         <nav class="navbar">
@@ -69,10 +69,18 @@
                         <i class="fa-regular fa-calendar-days"></i>
                         <input type="date" required placeholder="Data de nascimento" id="data">
                     </label>
-
                     <label class="label-input" for="">
                         <i class="fa-sharp fa-solid fa-phone"></i>
-                        <input type="number" required placeholder="Telefone" id="phone">
+                        <div>
+                            <select id="country-code" class="country-code">
+                                <option value="+1">+1 (EUA)</option>
+                                <option value="+44">+44 (Reino Unido)</option>
+                                <option value="+55">+55 (Brasil)</option>
+                                <option value="+91">+91 (Índia)</option>
+                                <!-- Adicione mais opções de países conforme necessário -->
+                            </select>
+                            <input type="tel" id="phone-number" placeholder="Seu número de telefone" />
+                        </div>
                     </label>
 
 
@@ -151,9 +159,9 @@
     <div class="box">
         <h2 class="logo"><span>Re</span>des <span>Soc</span>iais</h2>
 
-        <a href="#">Github</a>
-        <a href="#">Linkedin</a>
-        <a href="#">instagram</a>
+        <a href="https://github.com/16JoaoVso" target="_blank">Github</a>
+        <a href="https://br.linkedin.com/in/jo%C3%A3o-victor-santos-de-oliveira-808284273?trk=people-guest_people_search-card" target="_blank">Linkedin</a>
+        <a href="https://www.instagram.com/jotave.s0?igsh=MXV6MDJla3BsMm1icw==" target="_blank">instagram</a>
     </div>
 
 
