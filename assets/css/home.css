@@ -1,5 +1,7 @@
   /* google font   */
   @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
+  /* FONTE PARA O MENU ( font-family: "Nunito", sans-serif; ) */
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
   /* root */
   :root {
@@ -77,6 +79,8 @@
   /* Começo da header  */
 
   header {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
     width: 96%;
     background: var(--branco);
     position: fixed;
@@ -170,6 +174,7 @@
   /* Imagens da home  */
   .home .row .images img {
     height: 75vh;
+    border-radius: 25px;
   }
 
   /*   */
@@ -324,8 +329,10 @@
   }
 
   .contact .row .images img {
-    width: 50vw;
-    height: 70vh;
+    width: 490px;
+    border-radius: 15px;
+    height: 100%;
+    margin: 0 50px;
   }
 
   .contact .row .form-container {
@@ -522,7 +529,8 @@
     /* Imagens da home */
     .home .row .images img {
       width: 100%;
-      height: 60vh;
+      height: 50vh;
+      border-radius: 20px;
     }
 
     /* Sobre mobile  */

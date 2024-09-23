@@ -1,6 +1,7 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+/* FONTE PARA O MENU ( font-family: "Nunito", sans-serif; ) */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* root */
 :root {
@@ -73,6 +74,8 @@ body {
   }
 
   header {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
     width: 96%;
     background: var(--branco);
     position: fixed;

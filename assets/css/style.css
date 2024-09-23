@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+/* FONTE PARA O MENU ( font-family: "Nunito", sans-serif; ) */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 
 :root {
@@ -8,14 +10,13 @@
     --preto: #707070;
 }
 
-* {
+* {font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
     overflow: auto;
 }
 
@@ -35,7 +36,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin-top: -130px;
+    margin-top: -1px;
 }
 
 .content::before {
@@ -194,9 +195,13 @@ input:-webkit-autofill {
 /* Começo da header  */
 
 header {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
     width: 100%;
     background: var(--branco);
     position: fixed;
+    bottom: auto;
+    top: auto;
     left: 50%;
     transform: translate(-50%);
     display: flex;
@@ -231,8 +236,9 @@ header .navbar ul li {
 }
 
 header .navbar ul li a {
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: var(--azul);
+    text-decoration: none;
 }
 
 header .navbar ul li a:hover {
@@ -269,7 +275,7 @@ header .fa-times {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: -250px;
+    margin-top: -2px;
     padding: 1rem 0;
 }
 
@@ -757,6 +763,14 @@ header .fa-times {
     header .nav-toggle {
         top: 5.5rem;
         opacity: 1;
+    }
+
+    .footer {
+        background: var(--azulC);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1rem 0;
     }
 }
 
