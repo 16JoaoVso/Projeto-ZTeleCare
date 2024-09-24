@@ -10,7 +10,8 @@
     --preto: #707070;
 }
 
-* {font-family: 'Open Sans', sans-serif;
+* {
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -164,26 +165,38 @@ input:-webkit-autofill {
     -webkit-text-fill-color: #000 !important;
 }
 
-.label-input {
-    background-color: #ecf0f1;
-    display: flex;
-    align-items: center;
-    margin: 8px;
-}
-
-.country-code {
+.country-code-span {
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    left: 10px;
+  }
+  
+  .country-code {
     height: 40px;
     border: none;
     background-color: #ecf0f1;
     padding: 10px;
     font-size: 16px;
     border-radius: 5px 0 0 5px;
-}
-
-.country-code-span {
-    display: inline-block;
+    width: 100px;
+  }
+  
+  .label-input {
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+  }
+  
+  .label-input div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .label-input i {
     margin-right: 10px;
-}
+  }
 
 .icon-modify {
     color: #7f8c8d;

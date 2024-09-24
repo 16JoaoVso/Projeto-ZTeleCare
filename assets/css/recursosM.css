@@ -21,7 +21,6 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  text-transform: capitalize;
   outline: none;
   box-sizing: border-box;
   transition: all linear .2s;
@@ -120,7 +119,7 @@ header .fa-times {
   color: var(--azulC);
 }
 
-.titulo p{
+.titulo p {
   font-weight: 300;
   font-size: 2.5em;
 }
